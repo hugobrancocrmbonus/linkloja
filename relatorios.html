@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relatorios - Link Loja</title>
+    <link rel="stylesheet" href="styles/design-system.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: var(--gb-color-page);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="gb-management-page">
+      <header class="gb-management-header">
+        <div class="gb-management-header__inner">
+          <p class="gb-management-header__brand">AREZZO BARUERI - TESTE</p>
+        </div>
+      </header>
+
+      <div class="gb-management-main">
+        <section class="gb-management-section" aria-labelledby="reports-title">
+          <h1 class="gb-management-title" id="reports-title">Relatórios</h1>
+          <div class="gb-report-cards" aria-label="Resumo dos bônus">
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">TOTAL DISPONÍVEL <strong>HOJE</strong></p>
+              <p class="gb-report-card__value"><span class="gb-report-card__currency">R$</span><strong class="gb-report-card__number">0,00</strong></p>
+            </article>
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">BÔNUS <strong>A RECEBER</strong></p>
+              <p class="gb-report-card__value"><span class="gb-report-card__currency">R$</span><strong class="gb-report-card__number">20,00</strong></p>
+            </article>
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">BÔNUS <strong>VENCIDO</strong></p>
+              <p class="gb-report-card__value"><strong class="gb-report-card__number">1</strong></p>
+            </article>
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">BÔNUS <strong>A VENCER</strong></p>
+              <p class="gb-report-card__value"><strong class="gb-report-card__number">1</strong></p>
+            </article>
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">BÔNUS <strong>GERADO</strong></p>
+              <p class="gb-report-card__value"><strong class="gb-report-card__number">1</strong></p>
+            </article>
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">BÔNUS <strong>RESGATADO</strong></p>
+              <p class="gb-report-card__value"><strong class="gb-report-card__number">1</strong></p>
+            </article>
+            <article class="gb-report-card">
+              <p class="gb-report-card__label">BÔNUS <strong>CANCELADO</strong></p>
+              <p class="gb-report-card__value"><strong class="gb-report-card__number">1</strong></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="gb-management-section" aria-labelledby="manage-title">
+          <h2 class="gb-management-title" id="manage-title">Gerenciar bônus</h2>
+
+          <form class="gb-management-toolbar" action="#" method="get">
+            <input class="gb-management-search" type="search" name="busca" placeholder="Busca" aria-label="Busca">
+            <button class="gb-management-launch" type="button">Lançar bônus</button>
+          </form>
+
+          <ul class="gb-management-filters" aria-label="Filtros">
+            <li><button class="gb-filter-button gb-filter-button--all is-active" type="button"><span>Todos</span></button></li>
+            <li><button class="gb-filter-button gb-filter-button--available" type="button"><span>Disponível</span></button></li>
+            <li><button class="gb-filter-button gb-filter-button--expired" type="button"><span>Vencido</span></button></li>
+            <li><button class="gb-filter-button gb-filter-button--receivable" type="button"><span>A receber</span></button></li>
+            <li><button class="gb-filter-button gb-filter-button--redeemed" type="button"><span>Resgatado</span></button></li>
+            <li><button class="gb-filter-button gb-filter-button--cancelled" type="button"><span>Cancelado</span></button></li>
+            <li><button class="gb-filter-button gb-filter-button--lapsed" type="button"><span>Expirado</span></button></li>
+          </ul>
+
+          <section class="gb-management-table" aria-label="Tabela de bônus">
+            <div class="gb-management-table__row gb-management-table__row--header">
+              <button class="gb-management-table__cell gb-management-table__cell--store" type="button">
+                <span>Loja</span>
+                <span class="gb-management-sort">⌃⌄</span>
+              </button>
+              <button class="gb-management-table__cell gb-management-table__cell--purchase" type="button">
+                <span>Valor da compra</span>
+                <span class="gb-management-sort">⌃⌄</span>
+              </button>
+              <button class="gb-management-table__cell gb-management-table__cell--bonus" type="button">
+                <span>Bônus gerado</span>
+              </button>
+              <button class="gb-management-table__cell gb-management-table__cell--validity" type="button">
+                <span>Validade do bônus</span>
+                <span class="gb-management-sort">⌃⌄</span>
+              </button>
+              <button class="gb-management-table__cell gb-management-table__cell--origin" type="button">
+                <span>Origem</span>
+                <span class="gb-management-sort">⌃⌄</span>
+              </button>
+              <button class="gb-management-table__cell gb-management-table__cell--status" type="button">
+                <span>Status</span>
+                <span class="gb-management-sort">⌃⌄</span>
+              </button>
+              <button class="gb-management-table__cell gb-management-table__cell--actions" type="button">
+                <span>Ações</span>
+              </button>
+            </div>
+
+            <div class="gb-management-table__row">
+              <span class="gb-management-table__cell gb-management-table__cell--store">AREZZO BARUERI - TESTE</span>
+              <span class="gb-management-table__cell gb-management-table__cell--purchase">R$ 10,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--bonus">R$ 20,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--validity">14-05-2026 até<br>18-12-2025</span>
+              <span class="gb-management-table__cell gb-management-table__cell--origin"></span>
+              <span class="gb-management-table__cell gb-management-table__cell--status">A receber</span>
+              <span class="gb-management-table__cell gb-management-table__cell--actions">
+                <button class="gb-action-button" type="button"><span>Cancelar</span></button>
+              </span>
+            </div>
+            <div class="gb-management-table__row">
+              <span class="gb-management-table__cell gb-management-table__cell--store">AREZZO BARUERI - TESTE</span>
+              <span class="gb-management-table__cell gb-management-table__cell--purchase">R$ 10,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--bonus">R$ 20,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--validity">14-05-2026 até<br>18-12-2025</span>
+              <span class="gb-management-table__cell gb-management-table__cell--origin"></span>
+              <span class="gb-management-table__cell gb-management-table__cell--status">A receber</span>
+              <span class="gb-management-table__cell gb-management-table__cell--actions">
+                <button class="gb-action-button" type="button"><span>Cancelar</span></button>
+              </span>
+            </div>
+            <div class="gb-management-table__row">
+              <span class="gb-management-table__cell gb-management-table__cell--store">AREZZO BARUERI - TESTE</span>
+              <span class="gb-management-table__cell gb-management-table__cell--purchase">R$ 10,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--bonus">R$ 20,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--validity">14-05-2026 até<br>18-12-2025</span>
+              <span class="gb-management-table__cell gb-management-table__cell--origin"></span>
+              <span class="gb-management-table__cell gb-management-table__cell--status">A receber</span>
+              <span class="gb-management-table__cell gb-management-table__cell--actions">
+                <button class="gb-action-button" type="button"><span>Cancelar</span></button>
+              </span>
+            </div>
+            <div class="gb-management-table__row">
+              <span class="gb-management-table__cell gb-management-table__cell--store">AREZZO BARUERI - TESTE</span>
+              <span class="gb-management-table__cell gb-management-table__cell--purchase">R$ 10,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--bonus">R$ 20,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--validity">14-05-2026 até<br>18-12-2025</span>
+              <span class="gb-management-table__cell gb-management-table__cell--origin"></span>
+              <span class="gb-management-table__cell gb-management-table__cell--status">A receber</span>
+              <span class="gb-management-table__cell gb-management-table__cell--actions">
+                <button class="gb-action-button" type="button"><span>Cancelar</span></button>
+              </span>
+            </div>
+            <div class="gb-management-table__row">
+              <span class="gb-management-table__cell gb-management-table__cell--store">AREZZO BARUERI - TESTE</span>
+              <span class="gb-management-table__cell gb-management-table__cell--purchase">R$ 10,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--bonus">R$ 20,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--validity">14-05-2026 até<br>18-12-2025</span>
+              <span class="gb-management-table__cell gb-management-table__cell--origin"></span>
+              <span class="gb-management-table__cell gb-management-table__cell--status">A receber</span>
+              <span class="gb-management-table__cell gb-management-table__cell--actions">
+                <button class="gb-action-button" type="button"><span>Cancelar</span></button>
+              </span>
+            </div>
+            <div class="gb-management-table__row">
+              <span class="gb-management-table__cell gb-management-table__cell--store">AREZZO BARUERI - TESTE</span>
+              <span class="gb-management-table__cell gb-management-table__cell--purchase">R$ 10,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--bonus">R$ 20,00</span>
+              <span class="gb-management-table__cell gb-management-table__cell--validity">14-05-2026 até<br>18-12-2025</span>
+              <span class="gb-management-table__cell gb-management-table__cell--origin"></span>
+              <span class="gb-management-table__cell gb-management-table__cell--status">A receber</span>
+              <span class="gb-management-table__cell gb-management-table__cell--actions">
+                <button class="gb-action-button" type="button"><span>Cancelar</span></button>
+              </span>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

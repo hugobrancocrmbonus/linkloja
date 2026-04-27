@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerenciar Bonus - Figma Preview</title>
+    <link rel="stylesheet" href="styles/design-system.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: var(--gb-color-page);
+      }
+
+      body {
+        overflow: auto;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="gb-page gb-page--1440" data-node-id="1:195" data-name="1440w default">
+      <header class="gb-header" data-node-id="1:196" data-name="Header">
+        <nav class="gb-navigation" data-node-id="1:197" data-name="Navigation" aria-label="Principal">
+          <p class="gb-brand" data-node-id="1:198">AREZZO BARUERI - TESTE</p>
+
+          <ul class="gb-nav-list" data-node-id="1:199" data-name="List">
+            <li class="gb-nav-item gb-nav-item--launch" data-node-id="1:200" data-name="Item -> Link" tabindex="0">
+              <span class="gb-nav-icon" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/84443ceb-7980-4aab-b049-2f41beb6a420" alt="">
+              </span>
+              <span class="gb-nav-label">LANÇAR BONUS</span>
+            </li>
+            <li class="gb-nav-item gb-nav-item--cancel" data-node-id="1:208" data-name="Item -> Link" tabindex="0">
+              <span class="gb-nav-icon" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/84443ceb-7980-4aab-b049-2f41beb6a420" alt="">
+              </span>
+              <span class="gb-nav-label">CANCELAR BONUS</span>
+            </li>
+            <li class="gb-nav-item gb-nav-item--manage is-active" data-node-id="1:216" data-name="Item -> Link" tabindex="0">
+              <span class="gb-nav-icon gb-nav-icon--manage" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/243387f1-b793-4f97-9311-1cb140cf62bb" alt="">
+              </span>
+              <span class="gb-nav-label">Gerenciar Bônus</span>
+              <span class="gb-nav-badge"><span>NOVO</span></span>
+            </li>
+            <li class="gb-nav-item gb-nav-item--reports" data-node-id="1:222" data-name="Item -> Link" tabindex="0">
+              <span class="gb-nav-icon gb-nav-icon--small" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/cc4a4c96-bc35-4658-a412-8812046b69db" alt="">
+              </span>
+              <span class="gb-nav-label">RELATÓRIOS</span>
+            </li>
+            <li class="gb-nav-item gb-nav-item--clients" data-node-id="1:233" data-name="Item -> Link" tabindex="0">
+              <span class="gb-nav-icon gb-nav-icon--small" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/33001f19-7b4f-4a0b-8a4b-d809bfe2d3f8" alt="">
+              </span>
+              <span class="gb-nav-label">CLIENTES</span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="gb-panel gb-panel--1440" data-node-id="1:241" data-name="Overlay+Shadow">
+        <div class="gb-panel-header" data-node-id="1:242" data-name="HorizontalBorder">
+          <div class="gb-title-row" data-node-id="1:243" data-name="Heading 1">
+            <span class="gb-title-icon" aria-hidden="true">
+              <img src="https://www.figma.com/api/mcp/asset/35ff0666-2f6f-468c-8c5e-a3ae0ebb2f05" alt="">
+            </span>
+            <h1 class="gb-title" data-node-id="1:244">GERENCIAR BÔNUS</h1>
+          </div>
+
+          <button class="gb-help-button" type="button" data-modal-open="how-it-works" data-node-id="1:247" data-name="Background+Border">
+            <span>Como funciona?</span>
+          </button>
+
+          <p class="gb-form-label" data-node-id="1:249">Digite o celular do cliente</p>
+          <form class="gb-search-form" data-node-id="1:250" data-name="Form" novalidate>
+            <div class="gb-input" data-node-id="1:251" data-name="Input">
+              <div class="gb-input__container">
+                <input class="gb-input-field" name="query" value="(11) 94754 4945" maxlength="15" autocomplete="off" aria-label="Digite o celular do cliente">
+              </div>
+            </div>
+            <button class="gb-primary-button" type="submit" data-node-id="1:254" data-name="Button">
+              <span class="gb-primary-button__icon" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/8e6911eb-c3ae-4a7a-b356-9ca88f2e7dbb" alt="">
+              </span>
+              <span class="gb-primary-button__label">Consultar</span>
+            </button>
+            <p class="gb-input-error">Insira um número de celular válido.</p>
+          </form>
+        </div>
+
+        <button class="gb-user-avatar" type="button" data-drawer-open="customer-details" data-node-id="1:258" data-name="Border" aria-label="Abrir detalhes do cliente">
+          <span class="gb-user-avatar__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/5cd87615-a00e-4e4c-b14c-b67eb5f7f557" alt="">
+          </span>
+        </button>
+        <button class="gb-user-summary" type="button" data-drawer-open="customer-details" data-node-id="1:261">
+          <p>Hugo</p>
+          <p>55 (11) 94754-4945</p>
+        </button>
+
+        <section class="gb-stats" aria-label="Resumo de bônus">
+          <article class="gb-stat-card gb-stat-card--money gb-stat-card--available" data-node-id="1:262">
+            <p class="gb-stat-card__label">TOTAL DISPONÍVEL <strong>HOJE</strong></p>
+            <p class="gb-stat-card__currency">R$</p>
+            <p class="gb-stat-card__value">0,00</p>
+          </article>
+          <article class="gb-stat-card gb-stat-card--money gb-stat-card--receivable" data-node-id="1:266">
+            <p class="gb-stat-card__label">BÔNUS <strong>A RECEBER</strong></p>
+            <p class="gb-stat-card__currency">R$</p>
+            <p class="gb-stat-card__value">20,00</p>
+          </article>
+          <article class="gb-stat-card gb-stat-card--generated" data-node-id="1:270">
+            <p class="gb-stat-card__label">BÔNUS <strong>GERADO</strong></p>
+            <p class="gb-stat-card__value">1</p>
+          </article>
+          <article class="gb-stat-card gb-stat-card--redeemed" data-node-id="1:273">
+            <p class="gb-stat-card__label">BÔNUS <strong>RESGATADO</strong></p>
+            <p class="gb-stat-card__value">0</p>
+          </article>
+          <article class="gb-stat-card gb-stat-card--expired" data-node-id="1:276">
+            <p class="gb-stat-card__label">BÔNUS <strong>VENCIDO</strong></p>
+            <p class="gb-stat-card__value">0</p>
+          </article>
+          <article class="gb-stat-card gb-stat-card--expiring" data-node-id="1:279">
+            <p class="gb-stat-card__label">BÔNUS <strong>A VENCER</strong></p>
+            <p class="gb-stat-card__value">0</p>
+          </article>
+        </section>
+
+        <div class="gb-filter-heading" data-node-id="1:296" data-name="Heading 1">
+          <span class="gb-filter-heading__icon" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/1393d8ad-8401-4a1f-9341-c2b58b292068" alt="">
+          </span>
+          <h2 class="gb-filter-heading__text">Filtros</h2>
+        </div>
+
+        <ul class="gb-filter-list" data-name="Filter buttons">
+          <li><button class="gb-filter-button gb-filter-button--all is-active" type="button" data-filter="todos"><span>Todos</span></button></li>
+          <li><button class="gb-filter-button gb-filter-button--available" type="button" data-filter="disponivel"><span>Disponível</span></button></li>
+          <li><button class="gb-filter-button gb-filter-button--expired" type="button" data-filter="vencido"><span>Vencido</span></button></li>
+          <li><button class="gb-filter-button gb-filter-button--receivable" type="button" data-filter="a-receber"><span>A receber</span></button></li>
+          <li><button class="gb-filter-button gb-filter-button--redeemed" type="button" data-filter="resgatado"><span>Resgatado</span></button></li>
+          <li><button class="gb-filter-button gb-filter-button--cancelled" type="button" data-filter="cancelado"><span>Cancelado</span></button></li>
+          <li><button class="gb-filter-button gb-filter-button--lapsed" type="button" data-filter="expirado"><span>Expirado</span></button></li>
+        </ul>
+
+        <section class="gb-grid" data-node-id="1:307" data-name="Grid" aria-label="Tabela de bônus">
+          <div class="gb-grid-row gb-grid-row--header" data-node-id="1:308" data-name="Header -> Row">
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--store" type="button" data-sort aria-label="Loja: activate to sort column descending">
+              <span class="gb-sort-icon"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+              <p class="gb-grid-cell__text">Loja</p>
+              <span class="gb-sort-icon gb-sort-icon--inactive gb-sort-icon--desc"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+            </button>
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--purchase" type="button" data-sort aria-label="Valor da compra: activate to sort column ascending">
+              <span class="gb-sort-icon gb-sort-icon--inactive"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+              <p class="gb-grid-cell__text">Valor da compra</p>
+              <span class="gb-sort-icon gb-sort-icon--inactive gb-sort-icon--desc"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+            </button>
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--bonus" type="button" data-sort aria-label="Bônus gerado: activate to sort column ascending">
+              <p class="gb-grid-cell__text">Bônus gerado</p>
+            </button>
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--validity" type="button" data-sort aria-label="Validade do bônus: activate to sort column ascending">
+              <span class="gb-sort-icon gb-sort-icon--inactive"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+              <p class="gb-grid-cell__text">Validade do bônus</p>
+              <span class="gb-sort-icon gb-sort-icon--inactive gb-sort-icon--desc"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+            </button>
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--origin" type="button" data-sort aria-label="Origem: activate to sort column ascending">
+              <span class="gb-sort-icon gb-sort-icon--inactive"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+              <p class="gb-grid-cell__text">Origem</p>
+              <span class="gb-sort-icon gb-sort-icon--inactive gb-sort-icon--desc"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+            </button>
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--status" type="button" data-sort aria-label="Status: activate to sort column ascending">
+              <span class="gb-sort-icon gb-sort-icon--inactive"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+              <p class="gb-grid-cell__text">Status</p>
+              <span class="gb-sort-icon gb-sort-icon--inactive gb-sort-icon--desc"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+            </button>
+            <button class="gb-grid-cell gb-grid-cell--header gb-grid-cell--actions" type="button" data-sort aria-label="Ações: activate to sort column ascending">
+              <span class="gb-sort-icon gb-sort-icon--hidden"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+              <p class="gb-grid-cell__text">Ações</p>
+              <span class="gb-sort-icon gb-sort-icon--hidden gb-sort-icon--desc"><img src="https://www.figma.com/api/mcp/asset/f8827a2c-9c89-42b0-8b00-05c3a8a0690e" alt=""></span>
+            </button>
+          </div>
+
+          <button class="gb-grid-row gb-grid-row--body" type="button" data-drawer-open="customer-details" data-status="a-receber" data-node-id="1:371" data-name="Body -> Row" aria-label="Abrir detalhe do bônus">
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--store">
+              <span class="gb-grid-cell__text is-two-lines">AREZZO BARUERI -<br>TESTE</span>
+            </span>
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--purchase">
+              <span class="gb-grid-cell__text">R$ 10,00</span>
+            </span>
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--bonus">
+              <span class="gb-grid-cell__text">R$ 20,00</span>
+            </span>
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--validity">
+              <span class="gb-grid-cell__text is-two-lines">14-05-2026 até<br>18-12-2025</span>
+            </span>
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--origin"></span>
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--status">
+              <span class="gb-grid-cell__text">A receber</span>
+            </span>
+            <span class="gb-grid-cell gb-grid-cell--body gb-grid-cell--actions">
+              <span class="gb-action-button" data-modal-open="cancel-bonus"><span>Cancelar</span></span>
+            </span>
+          </button>
+        </section>
+      </section>
+
+      <div class="gb-footer-logo" data-node-id="1:386" data-name="Footer -> Logo footer" aria-hidden="true">
+        <img style="position: absolute; left: -490.5%; top: -490.5%; width: 1081%; height: 1081%; max-width: none;" src="https://www.figma.com/api/mcp/asset/975b4eda-83cb-4ba6-b8e4-08c32179c3d4" alt="">
+      </div>
+    </main>
+
+    <div class="gb-loading-overlay" id="loading" aria-hidden="true">
+      <div class="gb-loading-spinner"></div>
+    </div>
+
+    <section class="gb-modal" id="how-it-works" role="dialog" aria-modal="true" aria-labelledby="how-it-works-title" hidden>
+      <div class="gb-modal__dialog">
+        <div class="gb-modal__content gb-modal__content--video">
+          <button class="gb-modal__close" type="button" data-modal-close aria-label="Fechar"></button>
+          <h2 class="gb-modal__title" id="how-it-works-title">Conheça a nova funcionalidade <strong>Gerenciar Bônus</strong></h2>
+          <p class="gb-modal__description" style="text-align:center; margin-bottom:40px;">Assista o breve vídeo para aprender o que é e como funciona a nova funcionalidade.</p>
+          <iframe class="gb-video-frame" src="https://www.youtube.com/embed/sLELdjNh9hI?si=NCmOHbIRfeSrgVKt" title="Treinamento como funciona o módulo RTV" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="gb-modal__actions">
+            <button class="gb-modal__button" type="button" data-modal-close>Começar a usar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gb-modal" id="cancel-bonus" role="dialog" aria-modal="true" aria-labelledby="cancel-title" hidden>
+      <div class="gb-modal__dialog">
+        <div class="gb-modal__content">
+          <button class="gb-modal__close" type="button" data-modal-close aria-label="Fechar"></button>
+          <div class="gb-modal__step is-active" data-step="reason">
+            <h2 class="gb-modal__title" id="cancel-title">Selecione o motivo do cancelamento:</h2>
+            <div class="gb-modal__radio-group">
+              <input class="gb-modal__radio" id="reason-1" type="radio" name="reason" value="arrependimento">
+              <label class="gb-modal__radio-label" for="reason-1">ARREPENDIMENTO DA COMPRA</label>
+              <input class="gb-modal__radio" id="reason-2" type="radio" name="reason" value="pin">
+              <label class="gb-modal__radio-label" for="reason-2">NÃO RECEBIMENTO DO PIN</label>
+              <input class="gb-modal__radio" id="reason-3" type="radio" name="reason" value="troca">
+              <label class="gb-modal__radio-label" for="reason-3">TROCA DO PRODUTO</label>
+              <input class="gb-modal__radio" id="reason-4" type="radio" name="reason" value="alteracao">
+              <label class="gb-modal__radio-label" for="reason-4">ALTERAÇÃO DA COMPRA</label>
+              <input class="gb-modal__radio" id="reason-5" type="radio" name="reason" value="outro">
+              <label class="gb-modal__radio-label" for="reason-5">OUTRO MOTIVO</label>
+            </div>
+          </div>
+          <div class="gb-modal__step" data-step="custom-reason">
+            <h2 class="gb-modal__title">Qual é o motivo do<br>cancelamento do bônus?</h2>
+            <div class="gb-modal__field">
+              <label class="gb-modal__field-label" for="cancel-detail">Descreva o motivo do cancelamento</label>
+              <textarea class="gb-modal__textarea" id="cancel-detail" rows="5" maxlength="100" placeholder="Preencha no mínimo 15 caracteres..."></textarea>
+              <div class="gb-modal__counter"><span data-counter>0</span>/100</div>
+            </div>
+          </div>
+          <div class="gb-modal__step" data-step="seller">
+            <h2 class="gb-modal__title">Identifique o vendedor responsável pelo cancelamento do bônus</h2>
+            <div class="gb-modal__field">
+              <label class="gb-modal__field-label" for="seller-name">Insira o nome do responsável pelo cancelamento</label>
+              <input class="gb-modal__input" id="seller-name" type="text" placeholder="Nome Sobrenome" autocomplete="off">
+            </div>
+          </div>
+          <div class="gb-modal__step" data-step="success">
+            <h3 class="gb-modal__success">Bônus cancelado com sucesso!</h3>
+            <div class="gb-modal__amount-box gb-modal__amount-box--danger">
+              <span class="gb-modal__amount"><small>R$</small>0,00</span>
+              <p class="gb-modal__accent">bônus cancelado</p>
+            </div>
+            <div class="gb-modal__person">
+              <span class="gb-modal__person-avatar" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/5cd87615-a00e-4e4c-b14c-b67eb5f7f557" alt=""></span>
+              <div>
+                <h3 class="gb-modal__person-name">Hugo</h3>
+                <h6 class="gb-modal__person-phone">55 (11) 94754-4945</h6>
+              </div>
+            </div>
+          </div>
+          <div class="gb-modal__actions">
+            <button class="gb-modal__button gb-modal__button--ghost" type="button" data-modal-close>Cancelar</button>
+            <button class="gb-modal__button" type="button" data-next-step>Próximo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="gb-drawer" id="customer-details" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+      <div class="gb-drawer__dialog">
+        <button class="gb-modal__close" type="button" data-drawer-close aria-label="Fechar"></button>
+        <div class="gb-drawer__content">
+          <header class="gb-drawer__header">
+            <p class="gb-drawer__title" id="drawer-title">Hugo</p>
+            <p class="gb-drawer__meta"><small>55 (11) 94754-4945</small></p>
+          </header>
+          <section class="gb-drawer__balance">
+            <p class="gb-drawer__balance-label">SALDO DE BÔNUS</p>
+            <p class="gb-drawer__price"><small>R$</small><span>89,90</span></p>
+            <p class="gb-drawer__balance-validity"><small>Validos até <strong>20/03</strong></small></p>
+            <button class="gb-drawer__tool" type="button">Exportar</button>
+            <button class="gb-drawer__tool" type="button">Visualizar</button>
+          </section>
+          <section class="gb-drawer__table-panel">
+            <table class="gb-drawer__table">
+              <thead>
+                <tr>
+                  <th>Últimas compras</th>
+                  <th>Bonus</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>14/02/17</td>
+                  <td>+ 70,30</td>
+                  <td>R$ 730,00</td>
+                  <td>- 45,50</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </aside>
+
+    <script>
+      const body = document.body;
+      const loading = document.getElementById('loading');
+
+      function openLayer(layer) {
+        layer.hidden = false;
+        layer.classList.add('is-open');
+        body.classList.add('gb-modal-open');
+      }
+
+      function closeLayer(layer) {
+        layer.classList.remove('is-open');
+        layer.hidden = true;
+        if (!document.querySelector('.gb-modal.is-open, .gb-drawer.is-open')) {
+          body.classList.remove('gb-modal-open');
+        }
+      }
+
+      document.querySelectorAll('[data-modal-open]').forEach((trigger) => {
+        trigger.addEventListener('click', (event) => {
+          event.stopPropagation();
+          const modal = document.getElementById(trigger.dataset.modalOpen);
+          if (modal) openLayer(modal);
+        });
+      });
+
+      document.querySelectorAll('[data-modal-close]').forEach((trigger) => {
+        trigger.addEventListener('click', () => closeLayer(trigger.closest('.gb-modal')));
+      });
+
+      document.querySelectorAll('[data-drawer-open]').forEach((trigger) => {
+        trigger.addEventListener('click', () => openLayer(document.getElementById(trigger.dataset.drawerOpen)));
+      });
+
+      document.querySelectorAll('[data-drawer-close]').forEach((trigger) => {
+        trigger.addEventListener('click', () => closeLayer(trigger.closest('.gb-drawer')));
+      });
+
+      document.querySelectorAll('.gb-modal, .gb-drawer').forEach((layer) => {
+        layer.addEventListener('click', (event) => {
+          if (event.target === layer) closeLayer(layer);
+        });
+      });
+
+      document.querySelectorAll('.gb-filter-button').forEach((button) => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.gb-filter-button').forEach((item) => item.classList.remove('is-active'));
+          button.classList.add('is-active');
+          const row = document.querySelector('.gb-grid-row--body');
+          const shouldShow = button.dataset.filter === 'todos' || row.dataset.status === button.dataset.filter;
+          row.style.display = shouldShow ? '' : 'none';
+        });
+      });
+
+      document.querySelectorAll('[data-sort]').forEach((cell) => {
+        cell.addEventListener('click', () => {
+          document.querySelectorAll('.gb-sort-icon').forEach((icon) => {
+            if (!icon.classList.contains('gb-sort-icon--hidden')) icon.classList.add('gb-sort-icon--inactive');
+          });
+          const icons = cell.querySelectorAll('.gb-sort-icon:not(.gb-sort-icon--hidden)');
+          icons.forEach((icon) => icon.classList.toggle('gb-sort-icon--inactive'));
+        });
+      });
+
+      document.querySelector('.gb-search-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const value = form.querySelector('.gb-input-field').value.replace(/\D/g, '');
+        if (value.length < 10) {
+          form.classList.add('has-error');
+          return;
+        }
+        form.classList.remove('has-error');
+        loading.classList.add('is-open');
+        setTimeout(() => loading.classList.remove('is-open'), 700);
+      });
+
+      document.querySelector('[data-counter]')?.closest('.gb-modal__field')?.querySelector('textarea')?.addEventListener('input', (event) => {
+        document.querySelector('[data-counter]').textContent = event.target.value.length;
+      });
+
+      const cancelModal = document.getElementById('cancel-bonus');
+      const steps = ['reason', 'custom-reason', 'seller', 'success'];
+      let currentStep = 0;
+
+      function setCancelStep(index) {
+        currentStep = index;
+        cancelModal.querySelectorAll('.gb-modal__step').forEach((step) => {
+          step.classList.toggle('is-active', step.dataset.step === steps[currentStep]);
+        });
+        const next = cancelModal.querySelector('[data-next-step]');
+        next.textContent = currentStep === steps.length - 1 ? 'Fechar' : 'Próximo';
+      }
+
+      cancelModal.addEventListener('click', (event) => {
+        if (!event.target.matches('[data-next-step]')) return;
+        if (currentStep === steps.length - 1) {
+          closeLayer(cancelModal);
+          setCancelStep(0);
+          return;
+        }
+        if (steps[currentStep] === 'reason') {
+          const selected = cancelModal.querySelector('input[name="reason"]:checked');
+          if (!selected) return;
+          setCancelStep(selected.value === 'outro' ? 1 : 2);
+          return;
+        }
+        setCancelStep(currentStep + 1);
+      });
+
+      cancelModal.addEventListener('transitionend', () => {
+        if (cancelModal.hidden) setCancelStep(0);
+      });
+    </script>
+  </body>
+</html>
