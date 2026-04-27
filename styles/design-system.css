@@ -55,6 +55,7 @@
 
 .gb-page {
   position: relative;
+  width: 100%;
   min-height: 986.95px;
   background-image:
     linear-gradient(90deg, var(--gb-color-page) 0%, var(--gb-color-page) 100%),
@@ -64,22 +65,30 @@
 }
 
 .gb-page--1920 {
-  width: 1920px;
+  --gb-artboard-width: 1920px;
+
+  min-width: 1920px;
   min-height: 986.95px;
 }
 
 .gb-page--1512 {
-  width: 1512px;
+  --gb-artboard-width: 1512px;
+
+  min-width: 1512px;
   min-height: 1037.95px;
 }
 
 .gb-page--1440 {
-  width: 1440px;
+  --gb-artboard-width: 1440px;
+
+  min-width: 1440px;
   min-height: 986.95px;
 }
 
 .gb-page--1024 {
-  width: 1024px;
+  --gb-artboard-width: 1024px;
+
+  min-width: 1024px;
   min-height: 1178.89px;
 }
 
@@ -104,8 +113,11 @@
 
 .gb-navigation {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 50%;
+  width: var(--gb-artboard-width);
   height: inherit;
+  transform: translateX(-50%);
 }
 
 .gb-brand {
@@ -274,20 +286,23 @@
 
 .gb-panel--1920 {
   top: 88.5px;
-  left: 192px;
+  left: 50%;
   width: 1536px;
+  transform: translateX(-50%);
 }
 
 .gb-panel--1512 {
   top: 139.5px;
-  left: 151.2px;
+  left: 50%;
   width: 1270px;
+  transform: translateX(-50%);
 }
 
 .gb-panel--1440 {
   top: 88.5px;
-  left: 144px;
+  left: 50%;
   width: 1270px;
+  transform: translateX(-50%);
 }
 
 .gb-panel--1024 {
@@ -1184,22 +1199,26 @@
 
 .gb-page--1920 .gb-footer-logo {
   top: 866.95px;
-  left: 910px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .gb-page--1512 .gb-footer-logo {
   top: 917.95px;
-  left: 736.2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .gb-page--1440 .gb-footer-logo {
   top: 866.95px;
-  left: 729px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .gb-page--1024 .gb-footer-logo {
   top: 1058.89px;
-  left: 462px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .gb-page button,
